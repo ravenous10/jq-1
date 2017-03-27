@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Font Selector & Multiple Questions</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+
+  <!-- Font Changer --->
+
+    <section id="Font-changer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+
+            <div class="main-content">
+
+            <!-- Dropdown -->
+              <div class="dropdown text-center">
+                <select class="" name="">
+                  <option value="Jim Nightshade">Jim Nightshade</option>
+                  <option value="Macondo">Macondo</option>
+                  <option value="Fascinate Inline">Fascinate Inline</option>
+                  <option value="Lobster">Lobster</option>
+                </select>
+              </div>
+
+            <!-- Content -->
+              <div class="text text-center">
+                <h1>Lorem Ipsum</h1>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                  making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                  Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                  This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                  comes from a line in section 1.10.32.
+
+                  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"
+                  by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.<br>
+
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                  making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                  Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                  This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",<br>
+                  comes from a line in section 1.10.32.
+
+                  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"
+                  by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- Multiple Question -->
+
+  <section id="questions">
+    <div class="container">
+      <div class="row">
+        <div class="form">
+          <div class="input-group">
+            <div class="heading">
+              <h2>Choose the correct answer :</h2>
+            </div>
+
+            <div class="qs">
+              <h3>What is the Capital of Bangladesh?</h3>
+
+              <form class="" action="index.html" method="post">
+                <input type="radio" name="beach" value="">Dhaka <br>
+                <input type="radio" name="beach" value="">Rajshahi <br>
+                <input type="radio" name="beach" value="">Chittagong <br>
+                <input type="radio" name="beach" value="">Khulna <br>
+              </form>
+
+              <h3>What is the Capital of Bangladesh?</h3>
+
+              <form class="" action="index.html" method="post">
+                <input type="radio" name="beach" value="">Dhaka <br>
+                <input type="radio" name="beach" value="">Rajshahi <br>
+                <input type="radio" name="beach" value="">Chittagong <br>
+                <input type="radio" name="beach" value="">Khulna <br>
+              </form>
+
+              <button class="btn-success btn-custom btn" type="button" name="button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+		//  Font Family
+		$(function(){
+			$(".text").css("font-family","Jim Nightshade");
+			$("select").change(function(){
+				var f=$("select").val();
+				$(".text").css("font-family",f);
+			})
+
+
+		})
+
+		// Question And Answer Form_section
+		/*$(function () {
+
+			$("#Result").click(function(){
+				if(!$("input[@name=same_one]:checked").val()||!$("input[@name=same_two]:checked").val())
+				{
+					$("p").text("You're not done yet!");
+				}
+				else{
+					var same_one=$("input[@name=same_one]:checked").val();
+					var same_two=$("input[@name=same_two]:checked").val();
+				}
+			})
+		})
+    */
+
+
+
+	</script>
+
+  </body>
+</html>
